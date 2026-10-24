@@ -1,0 +1,103 @@
+# ===========================================================================
+# PROJECT-SPECIFIC: RESTRICTED DATA -- never commit.
+#
+# The DementiaBank Pitt corpus is distributed under a TalkBank membership
+# agreement that forbids redistribution. Anything containing transcript text,
+# audio, or vectors derived from them stays local. Researchers reproduce this
+# work by obtaining their own DementiaBank access and re-running the pipeline.
+# ===========================================================================
+Pitt.cha/
+Pitt.wav/
+Pitt_Processed_PAR_Only/
+*.cha
+*.wav
+
+# Derived from the protected transcripts (hidden states, per-visit records)
+artifacts/
+
+# ---------------------------------------------------------------------------
+# Paper, figures and result tables are kept local, not published here.
+# ---------------------------------------------------------------------------
+paper/
+figures/
+results/
+
+# Model weight caches, if pointed at the repo
+.cache/
+huggingface/
+*.safetensors
+
+# ===========================================================================
+# Python  (github/gitignore Python.gitignore, trimmed to what applies here)
+# ===========================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+sdist/
+wheels/
+*.egg-info/
+*.egg
+.installed.cfg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.Python
+
+# Secrets -- HF_TOKEN and similar belong here, never in the repo
+.env
+.env.local
+
+# Testing / linting / type checking
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.dmypy.json
+.ruff_cache/
+.pyre/
+
+# Jupyter / Colab -- this project began as a Colab notebook
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# ===========================================================================
+# TeX  (github/gitignore TeX.gitignore, trimmed)
+# ===========================================================================
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/*.toc
+paper/*.lof
+paper/*.lot
+paper/*.synctex.gz
+paper/*.fdb_latexmk
+paper/*.fls
+paper/main.pdf
+
+# ===========================================================================
+# OS / editor
+# ===========================================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*~

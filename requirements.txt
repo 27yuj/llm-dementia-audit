@@ -1,0 +1,17 @@
+# Core numerics
+numpy>=1.26
+pandas>=2.2
+scipy>=1.13
+scikit-learn>=1.5
+
+# CHAT transcript parsing
+pylangacq>=0.19
+
+# Model / activations  (CPU build -- see README for the --index-url)
+torch>=2.5
+transformers>=4.44
+accelerate>=0.33
+truststore>=0.9   # use Windows trust store (AV intercepts TLS)
+
+# Figures
+matplotlib>=3.9
